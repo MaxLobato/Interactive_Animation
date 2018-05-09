@@ -1,0 +1,30 @@
+@keyframes normal {
+    0% {
+        background-color: aqua;
+    }
+    20% {
+        background-color: brown;
+    }
+    40% {
+        background-color: greenyellow;
+    }
+    60% {
+        background-color: red;
+    }
+    80% {
+        background-color: darkorange;
+    }
+    100% {
+        background-color: cyan;
+    }
+}
+.normal {
+    animation-name: normal;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.evil {
+    background-image: url(pictures/weird_guy_staring_evil.png);
+}
