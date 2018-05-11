@@ -34,3 +34,12 @@
 .wheezer {
     background-image: url(pictures/download.jpg);
 }
+.me {
+    background-image: url(pictures/dispicable_me.jpg);
+}
+
+#mouse {
+    position: relative;
+    height: 200px;
+    width: 150px;
+}
