@@ -37,7 +37,15 @@
 .me {
     background-image: url(pictures/dispicable_me.jpg);
 }
-
+.duckman {
+    background-image: url(pictures/A-funny-stock-photo.jpg);
+}
+.windows {
+    background-image: url(pictures/windowsbackgound.png);
+}
+.mario {
+    background-image: url(pictures/mario.jpg);
+}
 #mouse {
     position: relative;
     height: 200px;

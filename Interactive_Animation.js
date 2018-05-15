@@ -72,4 +72,15 @@ document.addEventListener("mousemove", update);
 
             src.value = "pictures/mr-stark-i-dont-fee-so-good.png";
         }
+        if (e.keyCode === 65) {
+            bclass.value = "duckman";
+        }
+        if (e.keyCode === 81) {
+            bclass.value = "windows";
+            src.value = "pictures/bonzi.png";
+        }
+        if (e.keyCode == 90) {
+            bclass.value = "mario";
+        }
+        if ()
     }
