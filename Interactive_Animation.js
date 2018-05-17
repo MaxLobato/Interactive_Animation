@@ -79,8 +79,14 @@ document.addEventListener("mousemove", update);
             bclass.value = "windows";
             src.value = "pictures/bonzi.png";
         }
-        if (e.keyCode == 90) {
+        if (e.keyCode === 90) {
             bclass.value = "mario";
         }
-        if ()
+        if (e.keyCode === 87) {
+            src.value = "pictures/quark.png";
+            bclass.value = "quark";
+        }
+        if (e.keyCode === 69) {
+            src.value = "pictures/skid.png";
+        }
     }

@@ -18,6 +18,20 @@
         background-color: cyan;
     }
 }
+@keyframes shake {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 20px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
 .normal {
     animation-name: normal;
     animation-duration: 3s;
@@ -25,14 +39,27 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease;
 }
+
 .evil {
     background-image: url(pictures/weird_guy_staring_evil.png);
 }
 .youcant {
     background-image: url(pictures/NewPiskel28.png);
+      animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.01s;
+    position: relative;
 }
 .wheezer {
     background-image: url(pictures/download.jpg);
+      animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.01s;
+    position: relative;
 }
 .me {
     background-image: url(pictures/dispicable_me.jpg);
@@ -42,10 +69,26 @@
 }
 .windows {
     background-image: url(pictures/windowsbackgound.png);
+      animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.01s;
+    position: relative;
 }
 .mario {
     background-image: url(pictures/mario.jpg);
 }
+.quark {
+    background-image: url(pictures/quarks.jpg);
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 0.01s;
+    position: relative;
+}
+
 #mouse {
     position: relative;
     height: 200px;
