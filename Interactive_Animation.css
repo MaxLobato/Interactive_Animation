@@ -19,14 +19,57 @@
     }
 }
 
+
 @keyframes shake {
     0% {
         left: 0px;
         top: 0px;
     }
     50% {
-        left: 20px;
+        left: 40px;
         top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes left1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: -40px;
+        top: 0px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes up1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 0px;
+        top: -40px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes down1 {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 0px;
+        top: 40px;
     }
     100% {
         left: 0px;
@@ -43,7 +86,7 @@
 }
 
 .evil {
-    background-image: url(pictures/weird_guy_staring_evil.png);
+    background-image: url(pictures/Keyboard-Download-PNG.png);
 }
 
 .youcant {
@@ -97,7 +140,38 @@
     animation-duration: 0.01s;
     position: relative;
 }
-
+.weirdleft {
+    animation-name: left1;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: relative;
+}
+.weirdright {
+    animation-name: shake;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: relative;
+}
+.weirddown {
+    animation-name: down1;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: relative;
+}
+.weirdup {
+    animation-name: up1;
+    animation-duration: 0.01s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    position: relative;
+}
 #mouse {
     position: relative;
     height: 200px;

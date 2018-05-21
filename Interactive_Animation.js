@@ -1,19 +1,21 @@
 var lordofchaos = document.getElementById('lordofchaos');
 var background = document.getElementById('background');
-
 var cursor = document.getElementById('mouse');
 var src = document.createAttribute('src');
 var src2 = document.createAttribute('src');
 var srcboard = document.createAttribute('src');
+var weirdclass = document.createAttribute('class');
 var bclass = document.createAttribute('class');
 var imgclass = document.createAttribute('class');
+weirdclass.value = "normalweird";
 src.value = "pictures/weird_guy_staring.png";
 src2.value = "pictures/guy_staring.PNG";
-imgclass.value = "normalllll"
+imgclass.value = "normal";
 
 bclass.value = "normal";
 background.setAttributeNode(bclass);
 lordofchaos.setAttributeNode(src);
+lordofchaos.setAttributeNode(weirdclass);
 cursor.setAttributeNode(src2);
 
 lordofchaos.style.height = "2700px";
@@ -53,6 +55,7 @@ document.body.onkeyup = function () {
     lordofchaos.style.height = "2700px";
     lordofchaos.style.width = "2200px";
     src2.value = "pictures/guy_staring.png";
+    weirdclass.value = "normalweird";
 }
 
 document.body.onkeydown = function (e) {
@@ -97,6 +100,15 @@ document.body.onkeydown = function (e) {
         src.value = "pictures/skid.png";
     }
     if (e.keyCode === 38) {
-
+        weirdclass.value = "weirdup";
+    }
+    if (e.keyCode === 37) {
+        weirdclass.value = "weirdleft";
+    }
+    if (e.keyCode === 39) {
+        weirdclass.value = "weirdright";
+    }
+    if (e.keyCode === 40) {
+        weirdclass.value = "weirddown";
     }
 }
