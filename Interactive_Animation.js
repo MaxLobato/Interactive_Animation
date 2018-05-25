@@ -98,6 +98,7 @@ document.body.onkeydown = function (e) {
     }
     if (e.keyCode === 69) {
         src.value = "pictures/skid.png";
+        bclass.value = "death";
     }
     if (e.keyCode === 38) {
         weirdclass.value = "weirdup";
